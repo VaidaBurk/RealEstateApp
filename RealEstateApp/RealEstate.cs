@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RealEstateApp
 {
@@ -23,10 +19,11 @@ namespace RealEstateApp
 
         public override string ToString()
         {
-            string realEstateObject = "type: " + this.Type + "; price: " + this.Price + " Eur; area: " + this.Area + " m²; city: " + this.City 
+            string realEstateObject = "type: " + this.Type + "; price: " + this.Price + " Eur; area: " + this.Area + " m²; city: " + this.City
                 + "; price per m²: " + this.sqmPrice() + " Eur";
             return realEstateObject;
         }
+
 
         public double sqmPrice()
         {
@@ -34,5 +31,7 @@ namespace RealEstateApp
             sqmPrice = Math.Round(sqmPrice, 2);
             return sqmPrice;
         }
+
+
     }
 }
